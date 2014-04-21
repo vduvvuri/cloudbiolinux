@@ -188,8 +188,8 @@ def _provision_puppet_classes(to_install, ignore=None):
     packages, _ = _yaml_to_packages(pkg_config, to_install)
     packages = [p for p in packages if ignore is None or p not in ignore]
     classes = [recipe for recipe in env.flavor.rewrite_config_items("puppet_classes", packages)]
-    if classes:  # Don't bother running chef if nothing to configure
-        install_puppet_class(classes, True)
+    # if classes:  # Don't bother running chef if nothing to configure
+    # install_puppet_class(classes, True)
 
 
 def install_chef_recipe(recipe, automated=False, flavor=None):

@@ -212,7 +212,7 @@ python:
   - python-distutils-extra
   - python-pip
   - python-setuptools
-  - python-virtualenv
+  #- python-virtualenv
   - python3
   - python3-dev
   - python-rpy
@@ -402,7 +402,7 @@ bio_proteomics:
     - libxslt-dev
 
     # Required for protvis
-    - python-virtualenv
+    #- python-virtualenv
     - python-setuptools
     - libpng12-dev
     - python-dev
@@ -590,7 +590,7 @@ galaxyp:
      - libxslt-dev
 
      # Required for protvis
-     - python-virtualenv
+    # - python-virtualenv
      - python-setuptools
      - libpng12-dev
      - python-dev

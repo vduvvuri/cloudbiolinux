@@ -22,7 +22,7 @@ bio_nextgen:
     - samtools
     #- tophat
   variant:
-    - delly
+    # delly
     - freebayes
     - glia
     - lumpy-sv

@@ -23,8 +23,7 @@ from cloudbio.flavor.config import get_config_file
 from cloudbio.package.shared import _yaml_to_packages
 from cloudbio.custom.shared import (_make_tmp_dir, _write_to_file, _get_install,
                                     _configure_make, _if_not_installed,
-                                    _setup_conf_file, _add_to_profiles,
-                                    _create_python_virtualenv,
+                                    _setup_conf_file, _add_to_profiles,                                   
                                     _setup_simple_service,
                                     _read_boolean)
 from cloudbio.package.deb import (_apt_packages, _setup_apt_automation)
@@ -119,8 +118,7 @@ def _setup_env(env):
     # Get and install required Python libraries
     with _make_tmp_dir() as work_dir:
         with cd(work_dir):
-            url = os.path.join(CM_REPO_ROOT_URL, 'requirements.txt')
-            _create_python_virtualenv(env, 'CM', reqs_url=url)
+            url = os.path.join(CM_REPO_ROOT_URL, 'requirements.txt')            
     # Add a custom vimrc
     vimrc_url = os.path.join(MI_REPO_ROOT_URL, 'conf_files', 'vimrc')
     remote_file = '/etc/vim/vimrc'

@@ -107,7 +107,7 @@ python:
   - python
   - python-devel
   - python-pip
-  - python-virtualenv
+  #- python-virtualenv
   - boost-python-devel
   - numpy
 ruby:

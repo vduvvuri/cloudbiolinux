@@ -106,6 +106,7 @@ data_files = /mnt/biodata
 
 # If ``True``, install a set of tools considered as Galaxy dependencies
 #galaxy_install_dependencies = False
+galaxy_install_dependencies=true
 
 # Specify a custom location to a YAML file containing a list of tools to
 # install as Galaxy dependencies

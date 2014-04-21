@@ -97,7 +97,7 @@ python:
   - netsa-python
   - rpy
 java:
-  - leiningen
+  # leiningen
 phylogeny:
   - tracer
   - beast

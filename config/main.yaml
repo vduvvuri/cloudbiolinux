@@ -41,7 +41,7 @@ packages:
 #  - cloudman
 libraries:
   #- haskell-libs
-  - perl-libs
-  - python-libs
+  #- perl-libs
+  #- python-libs
   - r-libs
   - ruby-libs
